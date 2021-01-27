@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="step-indicator">
+    <div class="active">1</div>
+    <div>2</div>
+    <div>3</div>
+  </div>
+  <form>
+    <div class="form-step current-step">
+      <h2>Create an account</h2>
+      <div class="input">
+        <label class="required" for="email">Email</label><br>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div class="input">
+        <label class="required" for="password">Password</label><br>
+        <input id="password" name="password" type="password" required>
+      </div>
+      <div class="input">
+        <label class="required" for="confirm-password">Confirm password</label><br>
+        <input id="confirm-password" name="confirm-password" type="password" required>
+        <div id="password-warning">Passwords don't match!</div>
+      </div>
+      <button type="button" class="next-btn">Next</button>
+    </div>
+    <div class="form-step">
+      <h2>Add your bio</h2>
+      <div class="input">
+        <label class="required" for="username">Username</label><br>
+        <input  id="username" name="username" type="text" required>
+      </div>
+      <div class="input">
+        <label for="display-name">Display name</label><br>
+        <input id="display-name" name="display-name" type="text">
+      </div>
+      <div class="input">
+        <label for="bio">Bio</label><br>
+        <textarea name="bio" maxlength="150"></textarea>
+      </div>
+      <button type="button" class="prev-btn">Previous</button>
+      <button type="button" class="next-btn">Next</button>
+    </div>
+    <div class="form-step" id="submit-step">
+      <p>Do you want to submit?</p>
+      <button type="button" class="prev-btn">Previous</button><br>
+      <div class="submit">
+        <button id="submit-btn" type="submit">Submit</button>
+      </div>
+    </div>
+
+    <div></div>
+    <div></div>
+  </form>
+  <script src="app.js"></script>
+</body>
+</html>
